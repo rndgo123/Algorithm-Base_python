@@ -1,11 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[39]:
-
-
-#봉우리 - 내 코드
-
+#내 코드
 n = int(input())
 peak = [list(map(int, input())) for _ in range(n)]
 peak.insert(0, [0]*n)
@@ -23,13 +16,7 @@ for i in range(1, len(peak)-1) : #row
             result += 1
 print(result)
             
-
-
-# In[43]:
-
-
 #봉우리 - 풀이
-#상하좌우 탐색문제는 dx, dy리스트로 해결한다
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
